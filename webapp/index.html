@@ -1,0 +1,73 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <script src="algosdk.min.js"></script>
+       <script data-require="jquery@1.7.2" data-semver="1.7.2" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script src="script3.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <p><img src="https://raw.githubusercontent.com/wheath/algomed/master/assets/algomed.gif"></img></p>
+      <p>
+         <button class="styled" type="button" id='block'>
+         Get Latest Block
+         </button>
+         <button class="styled" type="button" id='createwallet'>
+           Create Wallet
+         </button> 
+         <button class="styled" type="button" id='account'>
+         Generate Account
+         </button>   
+         <button class="styled" type="button" id='recover'>
+         Recover Account from Mnemonic
+         </button> 
+         <button class="styled" type="button" id='adetails'>
+         Get Account Details
+         </button>                                 
+         <button class="styled" type="button" id='transaction'>
+         Submit Transaction
+         </button>
+         <button class="styled" type="button" id='trans'>
+            Get Tx From Account
+         </button> 
+         <button class="styled" type="button" id='multisig'>
+            Sign MultiSig
+         </button>      
+         <button class="styled" type="button" id='verify'>
+            Verify 
+         </button> 
+      </p>
+      <p>
+         <label for="name">From:</label>
+         <input type="text" id="from" name="from" required
+            minlength="58" maxlength="58" size="70"> 
+         <label for="name">To:</label>       
+         <input type="text" id="to" name="to" required
+            minlength="58" maxlength="58" size="70" placeholder="HM6RCM2MCBMMHFBZ4EVLLESRQ323QWGFXWC5BFAW3JJG3DVC4AFL3YS5FI">
+         <label for="name">Algos:</label>
+         <input type="text" id="algos" name="algos" required
+            minlength="1" maxlength="10" size="10" placeholder="739">            
+      </p>
+      <p>
+         <label for="name">Account Mnemonic:</label>  
+         <input type="text" id="backup" name="backup" required
+            maxlength="255" size="150">        
+      </p>
+      <p>
+         <label for="name">First Round:</label>  
+         <input type="text" id="fround" name="fround" required
+            maxlength="255" size="10">     
+         <label for="name">Last Round:</label>  
+         <input type="text" id="lround" name="lround" required
+            maxlength="255" size="10">                
+      </p>
+      <p>
+         <label for="name">Transaction ID:</label>  
+         <input type="text" id="txid" name="txid" required
+            maxlength="255" size="150">        
+      </p>   
+      <a href="https://bank.testnet.algorand.network/">Testnet Dispenser</a> 
+      <textarea name="ta" id="ta"></textarea>
+   </body>
+   
+</html>
